@@ -1,6 +1,5 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
-import {intersection} from "ts-interface-checker";
 import {LineGradient} from "@/components/LineGradient";
 
 
@@ -37,7 +36,7 @@ export function Testimonials() {
                     }}
                     className={`bg-blue ${testimonialStyles}`}>
           <Image src='/person-1.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-        <p className='font-playfair text-6xl'>"</p>
+        <p className='font-playfair text-6xl'>&quot;</p>
         <p className='font-thin text-l'>Impressive! ClickWise Solutions has truly revolutionized our digital marketing game.
           Their innovative strategies and creative approach have led to remarkable results.
           We have seen a significant increase in our online presence, and our brand has never looked better.</p>
@@ -53,7 +52,7 @@ export function Testimonials() {
                     }}
                     className={`bg-fuchsia-500 ${testimonialStyles}`}>
           <Image src='/person-2.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-          <p className='font-playfair text-6xl'>"</p>
+          <p className='font-playfair text-6xl'>&quot;</p>
           <p className='font-thin text-l'>
             Working with ClickWise Solutions has been an absolute delight. Their team is highly professional,
             and their dedication to our project was evident from day one.
@@ -71,7 +70,7 @@ export function Testimonials() {
                     }}
                     className={`bg-yellow ${testimonialStyles}`}>
           <Image src='/person-3.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-          <p className='font-playfair text-6xl'>"</p>
+          <p className='font-playfair text-6xl'>&quot;</p>
           <p className='font-thin text-l'>
             ClickWise Solutions is the digital marketing agency you can trust.
             Their attention to detail, commitment to excellence, and ability to adapt to ever-changing trends make them a top choice.

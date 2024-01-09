@@ -1,12 +1,9 @@
 import {CustomLink} from "@/components/CustomLink";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import {useMediaQuery} from "@/hooks/useMediaQuery";
 import {SocialMediaIcons} from "@/components/SocialMediaIcons";
 
 export function HeroSection() {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
     <section id='home'
              className='flex flex-col-reverse md:flex-row justify-between items-center md:h-full max-md:py-2 z-10'>
@@ -40,7 +37,7 @@ export function HeroSection() {
                       visible: { opacity: 1, x: 0 }
                     }}
                     className='z-30 basis-2/5 mt-12 md:mt-0 flex flex-col items-start align-top'>
-          <CustomLink href='#contact' className='mt-4 bg-zinc-200 hover:bg-gradient-rainblue hover:text-white transition duration-500'>Let's Talk</CustomLink>
+          <CustomLink href='#contact' className='mt-4 bg-zinc-200 hover:bg-gradient-rainblue hover:text-white transition duration-500'>Lets Talk</CustomLink>
         </motion.div>
 
         <motion.div initial='hidden'
