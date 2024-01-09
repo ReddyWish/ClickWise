@@ -28,7 +28,7 @@ export function HeroSection() {
         <motion.h1 className='font-title tracking-wider sm:text-6xl -m1-0.5'>I am founder of ClickWise
           Solutions
         </motion.h1>
-        <motion.p className='text-zinc-300 mt-2'>For the past 7 years, we've been at the forefront, shaping the digital landscape with innovative trends.
+        <motion.p className='text-zinc-300 mt-2'>For the past 7 years, we have been at the forefront, shaping the digital landscape with innovative trends.
         </motion.p>
 
         <motion.div initial='hidden'

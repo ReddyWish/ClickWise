@@ -117,7 +117,7 @@ export function Contact() {
               )
             }
             <button type='submit' className='p-3 w-full bg-gradient-rainblue text-black mt-5 hover:text-white transition duration-500 rounded-full'>
-              Let's Talk
+              Lets Talk
             </button>
           </form>
         </motion.div>

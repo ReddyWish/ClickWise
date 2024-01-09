@@ -84,7 +84,7 @@ export function Skills() {
             </div>
             <p className="mt-5">
               With seven years of industry experience, we continue to lead the way in dictating digital trends and achieving exceptional results for our clients.
-              Our extensive experience has allowed us to fine-tune our strategies, ensuring that we deliver innovative solutions that drive growth and elevate our clients' online presence.
+              Our extensive experience has allowed us to fine-tune our strategies, ensuring that we deliver innovative solutions that drive growth and elevate our clients online presence.
             </p>
           </motion.div>
 
@@ -106,8 +106,8 @@ export function Skills() {
               <div className="w-1/2 md:w-3/4 h-32 bg-fuchsia-500 absolute right-0 top-0 z-[-1]"/>
             </div>
             <p className="mt-5">
-              We don't just follow the industry's best practices; we set them. Our commitment to innovation drives us to explore new horizons and pioneer groundbreaking approaches to digital marketing. By pushing boundaries and staying
-              ahead of the curve, we consistently deliver cutting-edge solutions that outperform the competition and exceed our clients' expectations.
+              We do not just follow the industrys best practices, we set them. Our commitment to innovation drives us to explore new horizons and pioneer groundbreaking approaches to digital marketing. By pushing boundaries and staying
+              ahead of the curve, we consistently deliver cutting-edge solutions that outperform the competition and exceed our clients expectations.
             </p>
           </motion.div>
 
@@ -134,7 +134,6 @@ export function Skills() {
             </p>
           </motion.div>
         </div>
-
     </section>
   )
 }

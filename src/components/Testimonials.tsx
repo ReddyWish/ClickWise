@@ -40,7 +40,7 @@ export function Testimonials() {
         <p className='font-playfair text-6xl'>"</p>
         <p className='font-thin text-l'>Impressive! ClickWise Solutions has truly revolutionized our digital marketing game.
           Their innovative strategies and creative approach have led to remarkable results.
-          We've seen a significant increase in our online presence, and our brand has never looked better.</p>
+          We have seen a significant increase in our online presence, and our brand has never looked better.</p>
         </motion.div>
 
         <motion.div initial='hidden'
@@ -57,7 +57,7 @@ export function Testimonials() {
           <p className='font-thin text-l'>
             Working with ClickWise Solutions has been an absolute delight. Their team is highly professional,
             and their dedication to our project was evident from day one.
-            They've helped us achieve outstanding growth and have consistently exceeded our expectations.
+            They have helped us achieve outstanding growth and have consistently exceeded our expectations.
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ export function Testimonials() {
           <p className='font-thin text-l'>
             ClickWise Solutions is the digital marketing agency you can trust.
             Their attention to detail, commitment to excellence, and ability to adapt to ever-changing trends make them a top choice.
-            We're thrilled with the results they've delivered,
+            We are thrilled with the results they have delivered,
             and we look forward to continued success together.</p>
         </motion.div>
       </div>
