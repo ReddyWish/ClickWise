@@ -1,12 +1,13 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
-import {LineGradient} from "@/components/LineGradient";
+import {LineGradient} from "@/app/[lang]/components/LineGradient";
+import {Root} from "../../../../dictionaries/types";
 
 
-export function Testimonials() {
+export function Testimonials({ page }: Root) {
   const testimonialStyles = `mx-auto relative max-w-[350px] h-[350px]
    flex flex-col justify-end p-5 mt-48 before:absolute before:top-[-120px] before:-ml-[-110px] before:left-1/2`
-
+  let section = page.home.testimonials
   return (
     <section id='testimonials' className='pb-16'>
       <motion.div initial='hidden'
@@ -19,7 +20,7 @@ export function Testimonials() {
                   }}
                   className='flex flex-col items-center md:text-left'>
         <p className='font-playfair font-semibold text-4xl mb-3 text-fuchsia-500'>
-          Testimonials
+          {section.title}
         </p>
         <LineGradient width='w-1/3'/>
       </motion.div>
@@ -37,9 +38,7 @@ export function Testimonials() {
                     className={`bg-blue ${testimonialStyles}`}>
           <Image src='/person-1.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
         <p className='font-playfair text-6xl'>&quot;</p>
-        <p className='font-thin text-l'>Impressive! ClickWise Solutions has truly revolutionized our digital marketing game.
-          Their innovative strategies and creative approach have led to remarkable results.
-          We have seen a significant increase in our online presence, and our brand has never looked better.</p>
+        <p className='font-thin text-l'>{section["01"]}</p>
         </motion.div>
 
         <motion.div initial='hidden'
@@ -54,9 +53,7 @@ export function Testimonials() {
           <Image src='/person-2.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
           <p className='font-playfair text-6xl'>&quot;</p>
           <p className='font-thin text-l'>
-            Working with ClickWise Solutions has been an absolute delight. Their team is highly professional,
-            and their dedication to our project was evident from day one.
-            They have helped us achieve outstanding growth and have consistently exceeded our expectations.
+            {section["02"]}
           </p>
         </motion.div>
 
@@ -72,10 +69,7 @@ export function Testimonials() {
           <Image src='/person-3.png' alt='person-1' width={150} height={150} className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
           <p className='font-playfair text-6xl'>&quot;</p>
           <p className='font-thin text-l'>
-            ClickWise Solutions is the digital marketing agency you can trust.
-            Their attention to detail, commitment to excellence, and ability to adapt to ever-changing trends make them a top choice.
-            We are thrilled with the results they have delivered,
-            and we look forward to continued success together.</p>
+            {section["03"]}</p>
         </motion.div>
       </div>
     </section>

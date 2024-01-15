@@ -1,9 +1,14 @@
-import {CustomLink} from "@/components/CustomLink";
+import {CustomLink} from "@/app/[lang]/components/CustomLink";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-import {SocialMediaIcons} from "@/components/SocialMediaIcons";
+import {SocialMediaIcons} from "@/app/[lang]/components/SocialMediaIcons";
+import {Locale} from "../../../../i18n.config";
+import {getDictionary} from "../../../../lib/dictionary";
+import {Page, Root} from '../../../../dictionaries/types'
 
-export function HeroSection() {
+export function HeroSection({ page }: Root) {
+
+  let section = page.home.hero
   return (
     <section id='home'
              className='flex flex-col-reverse md:flex-row justify-between items-center md:h-full max-md:py-2 z-10'>
@@ -22,10 +27,11 @@ export function HeroSection() {
                  className='absolute bottom-[-11px] left-[-5px] z-0'/>
         </div>
 
-        <motion.h1 className='font-title tracking-wider sm:text-6xl -m1-0.5'>I am founder of ClickWise
-          Solutions
+        <motion.h1 className='font-title tracking-wider sm:text-6xl -m1-0.5'>
+          {section.title}
         </motion.h1>
-        <motion.p className='text-zinc-300 mt-2'>For the past 7 years, we have been at the forefront, shaping the digital landscape with innovative trends.
+        <motion.p className='text-zinc-300 mt-2'>
+          {section.description}
         </motion.p>
 
         <motion.div initial='hidden'
@@ -37,7 +43,7 @@ export function HeroSection() {
                       visible: { opacity: 1, x: 0 }
                     }}
                     className='z-30 basis-2/5 mt-12 md:mt-0 flex flex-col items-start align-top'>
-          <CustomLink href='#contact' className='mt-4 bg-zinc-200 hover:bg-gradient-rainblue hover:text-white transition duration-500'>Lets Talk</CustomLink>
+          <CustomLink href='#contact' className='mt-4 bg-zinc-200 hover:bg-gradient-rainblue hover:text-white transition duration-500'>{section.button}</CustomLink>
         </motion.div>
 
         <motion.div initial='hidden'

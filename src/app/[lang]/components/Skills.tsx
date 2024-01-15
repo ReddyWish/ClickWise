@@ -1,10 +1,14 @@
 import {useMediaQuery} from "@/hooks/useMediaQuery";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-import {LineGradient} from "@/components/LineGradient";
+import {LineGradient} from "@/app/[lang]/components/LineGradient";
+import {Locale} from "../../../../i18n.config";
+import {Root} from "../../../../dictionaries/types";
+import {getDictionary} from "../../../../lib/dictionary";
 
-export function Skills() {
+export function Skills({ page }: Root) {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
+  let section = page.home.skills
   return (
     <section id='skills' className='pb-24 max-md:pb-5'>
       <div className='md:flex md:justify-between md:gap-16 mt-32 max-md:mt-10'>
@@ -18,19 +22,43 @@ export function Skills() {
                     }}
                     className='md:w-1/3 relative z-30'>
             <p className='font-playfair font-semibold text-4xl mb-3'>
-              Our <span className='text-fuchsia-500'>Skills</span>
+              <span className='text-white'>{section.service} <span className='text-fuchsia-500'>&</span> {section.costs}</span>
             </p>
             <LineGradient width='w-1/2'/>
           <div className='mt-10 mb-7'>
             <ul>
-              <li className='pb-2'>💡 Search Engine Optimization (SEO)</li>
-              <li className='pb-2'>💡 Content Marketing</li>
-              <li className='pb-2'>💡 Social Media Marketing</li>
-              <li className='pb-2'>💡 Pay-Per-Click Advertising (PPC)</li>
-              <li className='pb-2'>💡 Influencer Marketing</li>
-              <li className='pb-2'>💡 Online Advertising</li>
-              <li className='pb-2'>💡 Reputation Management</li>
-              <li className='pb-2'>💡 Email Marketing</li>
+              <li className='pb-5'>
+                💡 {section.seo}
+                <p className='pl-6 text-zinc-300 text-xs'>€1,100 – €4,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["content marketing"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€1,500 – €10,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section[ "social media marketing"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€900 – €20,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["pay-per-click"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€4,100 – €7,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["influencer marketing"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€1,000 – €3,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["online advertising"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€2,100 – €4,500 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["reputation management"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€500 – €4,000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section["email marketing"]}
+                <p className='pl-6 text-zinc-300 text-xs'>€300 – €5,000 / {section.month}</p>
+              </li>
             </ul>
           </div>
         </motion.div>
@@ -78,13 +106,12 @@ export function Skills() {
             <div className='relative h-32'>
               <div className="z-10">
                 <p className='font-playfair font-semibold text-5xl'>01</p>
-                <p className='font-playfair font-semibold text-3xl mt-3'>Experience</p>
+                <p className='font-playfair font-semibold text-3xl mt-3'>{section["experience-title"]}</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>
             </div>
             <p className="mt-5">
-              With seven years of industry experience, we continue to lead the way in dictating digital trends and achieving exceptional results for our clients.
-              Our extensive experience has allowed us to fine-tune our strategies, ensuring that we deliver innovative solutions that drive growth and elevate our clients online presence.
+              {section["experience-description"]}
             </p>
           </motion.div>
 
@@ -101,13 +128,12 @@ export function Skills() {
             <div className='relative h-32'>
               <div className="z-10">
                 <p className='font-playfair font-semibold text-5xl'>02</p>
-                <p className='font-playfair font-semibold text-3xl mt-3'>Innovative</p>
+                <p className='font-playfair font-semibold text-3xl mt-3'>{section["innovative-title"]}</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-fuchsia-500 absolute right-0 top-0 z-[-1]"/>
             </div>
             <p className="mt-5">
-              We do not just follow the industrys best practices, we set them. Our commitment to innovation drives us to explore new horizons and pioneer groundbreaking approaches to digital marketing. By pushing boundaries and staying
-              ahead of the curve, we consistently deliver cutting-edge solutions that outperform the competition and exceed our clients expectations.
+              {section["innovative-description"]}
             </p>
           </motion.div>
 
@@ -124,13 +150,12 @@ export function Skills() {
             <div className='relative h-32'>
               <div className="z-10">
                 <p className='font-playfair font-semibold text-5xl'>03</p>
-                <p className='font-playfair font-semibold text-3xl mt-3'>Imaginative</p>
+                <p className='font-playfair font-semibold text-3xl mt-3'>{section["imaginative-title"]}</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"/>
             </div>
             <p className="mt-5">
-              We believe that digital marketing is an art as much as it is science. Our imaginative approach brings fresh perspectives to every project, allowing us to craft unique and captivating campaigns. With a flair for thinking outside the box,
-              we transform ideas into memorable and impactful marketing experiences that resonate with audiences.
+              {section["imaginative-description"]}
             </p>
           </motion.div>
         </div>

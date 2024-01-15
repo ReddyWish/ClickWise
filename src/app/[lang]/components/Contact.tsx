@@ -1,15 +1,18 @@
-import {LineGradient} from '@/components/LineGradient';
+import {LineGradient} from '@/app/[lang]/components/LineGradient';
 import {useForm} from 'react-hook-form';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import React, {useState} from "react";
+import {Root} from "../../../../dictionaries/types";
 
-export function Contact() {
+export function Contact({ page }: Root) {
   const {
     register,
     trigger,
     formState: {errors}
   } = useForm();
+
+  let section = page.home.contacts
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const isValid = await trigger();
@@ -31,7 +34,7 @@ export function Contact() {
                   }}>
         <div>
           <p className='font-playfair font-semibold text-4xl mb-3'>
-            <span className='text-fuchsia-500'>Contact</span> Me
+            <span className='text-fuchsia-500'>{section.title}</span>
           </p>
           <LineGradient width='w-1/3'/>
         </div>
@@ -68,7 +71,7 @@ export function Contact() {
             <input
               className='w-full bg-zinc-100 text-zinc-900 font-semibold placeholdre-opaque-black p-3'
               type='text'
-              placeholder='Name'
+              placeholder={section.name}
               {...register('name', {
                 required: true,
                 maxLength: 100,
@@ -84,7 +87,7 @@ export function Contact() {
 
             <input className='w-full bg-zinc-100 text-zinc-900 font-semibold placeholdre-opaque-black p-3 mt-5'
                    type='email'
-                   placeholder='Email'
+                   placeholder={section.email}
                    {...register('email', {
                      required: true,
                      pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -102,7 +105,7 @@ export function Contact() {
             <textarea className='w-full bg-zinc-100 text-zinc-900 font-semibold placeholdre-opaque-black p-3 mt-5'
                    rows={4}
                    cols={80}
-                   placeholder='Message'
+                   placeholder={section.message}
                    {...register('message', {
                      required: true,
                      maxLength: 2000,
@@ -117,7 +120,7 @@ export function Contact() {
               )
             }
             <button type='submit' className='p-3 w-full bg-gradient-rainblue text-black mt-5 hover:text-white transition duration-500 rounded-full'>
-              Lets Talk
+              {section["lets talk"]}
             </button>
           </form>
         </motion.div>

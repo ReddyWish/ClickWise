@@ -1,0 +1,81 @@
+{
+  "page": {
+    "home": {
+      "navigation": {
+        "home": {
+          "title": "Home",
+          "href": "#home"
+        },
+        "skills": {
+          "title": "Skills",
+          "href": "#skills"
+        },
+        "projects": {
+          "title": "Projects",
+          "href": "#projects"
+        },
+        "testimonials": {
+          "title": "Testimonials",
+          "href": "#testimonials"
+        },
+        "contact me": {
+          "title": "Contact me",
+          "href": "#contact"
+        }
+      },
+      "hero": {
+        "title": "I am founder of ClickWise Solutions",
+        "description": "For the past 7 years, we have been at the forefront, shaping the digital landscape with innovative trends",
+        "button": "Lets Talk"
+      },
+      "skills": {
+        "service": "Services",
+        "costs": "Costs",
+        "seo": "Search Engine Optimization (SEO)",
+        "content marketing": "Content Marketing",
+        "social media marketing": "Social Media Marketing",
+        "pay-per-click": "Pay-Per-Click Advertising (PPC)",
+        "influencer marketing": "Influencer Marketing",
+        "online advertising": "Online Advertising",
+        "reputation management": "Reputation Management",
+        "email marketing": "Email Marketing",
+        "month": "month",
+        "experience-title": "Experience",
+        "experience-description": "With seven years of industry experience, we continue to lead the way in dictating digital trends and achieving exceptional results for our clients.\n              Our extensive experience has allowed us to fine-tune our strategies, ensuring that we deliver innovative solutions that drive growth and elevate our clients online presence.",
+        "innovative-title": "Innovative",
+        "innovative-description": "We do not just follow the industrys best practices, we set them. Our commitment to innovation drives us to explore new horizons and pioneer groundbreaking approaches to digital marketing. By pushing boundaries and staying ahead of the curve, we consistently deliver cutting-edge solutions that outperform the competition and exceed our clients expectations.",
+        "imaginative-title": "Imaginative",
+        "imaginative-description": "We believe that digital marketing is an art as much as it is science. Our imaginative approach brings fresh perspectives to every project, allowing us to craft unique and captivating campaigns. With a flair for thinking outside the box, we transform ideas into memorable and impactful marketing experiences that resonate with audiences."
+      },
+      "projects": {
+        "our": "Our",
+        "pro": "Pro",
+        "jects": "jects",
+        "description": " Dive into the cutting-edge initiatives that define our dedication to staying at the forefront of digital marketing.",
+        "loft-oblaka": "Our digital marketing agency spearheaded a successful campaign for a kids loft event project. We leveraged innovative strategies to create buzz and engage our target audience. Through precise targeting, we generated significant interest and attendance, making the event a memorable success",
+        "reelso-mania": "Our digital marketing agency was proud to collaborate with a prominent reels maker and teacher to develop and elevate their personal brand. With a blend of creativity and strategic precision, we crafted a captivating online presence.",
+        "life-pay": "Our project with a fintech company specializing in payment solutions was a testament to our digital marketing prowess. We undertook the task of enhancing their Instagram account, strategically positioning them as industry leaders.",
+        "holy-posh": "Our project with a personal buyer and stylist involved transforming their Instagram account into a fashion powerhouse. We helped launch the product, crafted captivating visuals, shared styling tips, and engaged with their audience to boost their online presence."
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "01": "Impressive! ClickWise Solutions has truly revolutionized our digital marketing game. Their innovative strategies and creative approach have led to remarkable results. We have seen a significant increase in our online presence, and our brand has never looked better.",
+        "02": "Working with ClickWise Solutions has been an absolute delight. Their team is highly professional, and their dedication to our project was evident from day one. They have helped us achieve outstanding growth and have consistently exceeded our expectations.",
+        "03": "ClickWise Solutions is the digital marketing agency you can trust. Their attention to detail, commitment to excellence, and ability to adapt to ever-changing trends make them a top choice. We are thrilled with the results they have delivered, and we look forward to continued success together."
+      },
+      "contacts": {
+        "title": "Contact Me",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "lets talk": "Lets Talk"
+      },
+      "title": "Welcome to NextJs i18n",
+      "description": "Internationalization in NextJs 13 App router"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "This is the about page"
+    }
+  }
+}
