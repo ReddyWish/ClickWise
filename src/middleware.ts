@@ -38,5 +38,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.png|avatar.svg|blob.svg|click.svg|unitedkingdom.svg|spain.svg).*)']
+  matcher: ['/((?!api|_next/static|_next/image|favicon.png|avatar.svg|blob.svg|click.svg|unitedkingdom.svg|spain.svg|brush.png|twitter.png|linkedin.png|instagram.png|facebook.png|skills.jpg|loft-oblaka.png|life-pay.png|reelso-mania.png|holy-posh.png|person-1.png|person-2.png|person-3.png|contact.jpg).*)']
 }
