@@ -1,10 +1,8 @@
 import {useMediaQuery} from "@/hooks/useMediaQuery";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-import {LineGradient} from "@/app/[lang]/components/LineGradient";
-import {Locale} from "../../../../i18n.config";
-import {Root} from "../../../../dictionaries/types";
-import {getDictionary} from "../../../../lib/dictionary";
+import {LineGradient} from "@/app/components/LineGradient";
+import {Root} from "../../../dictionaries/types";
 
 export function Skills({ page }: Root) {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")

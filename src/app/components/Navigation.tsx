@@ -1,13 +1,13 @@
 'use client'
 import {navMenuList} from "@/data/navigationData";
-import {CustomLink} from "@/app/[lang]/components/CustomLink";
+import {CustomLink} from "@/app/components/CustomLink";
 import {FiMenu} from "react-icons/fi";
 import {cn} from "@/utils/helper";
 import {useEffect, useState} from "react";
 import Image from 'next/image';
 import {AiOutlineClose} from "react-icons/ai";
-import { Root } from '../../../../dictionaries/types';
-import {LocaleSwitcher} from "@/app/[lang]/components/LocaleSwitcher";
+import { Root } from '../../../dictionaries/types';
+import {LocaleSwitcher} from "@/app/components/LocaleSwitcher";
 
 export function Navigation({ page }: Root) {
   const [isNavOpened, setIsNavOpened] = useState(false)
@@ -17,7 +17,7 @@ export function Navigation({ page }: Root) {
     <nav className={`py-4 sticky top-0 z-50 bg-transparent md:bg-zinc-900/40 ${isNavOpened ? '' : ''}`}>
       <div className='max-w-7xl px-4 md:px-8 mx-auto flex justify-between items-center max-md:justify-end relative'>
         <CustomLink href='#home' linkType='link' className='max-md:absolute left-5 top-0'>
-          <Image src='/Clic (2).svg' alt='logo' width={70} height={70}/>
+          <Image src='/click.svg' alt='logo' width={70} height={70}/>
         </CustomLink>
 
         <div className='md:hidden cursor-pointer absolute top-5 roght-3' onClick={() => setIsNavOpened((prev) => !prev)}>

@@ -1,9 +1,9 @@
 'use client'
 import {motion} from 'framer-motion';
 import Image from 'next/image';
-import {LineGradient} from "@/app/[lang]/components/LineGradient";
+import {LineGradient} from "@/app/components/LineGradient";
 import Link from "next/link";
-import {Root} from "../../../../dictionaries/types";
+import {Root} from "../../../dictionaries/types";
 
 const Project = ({title, subtitle, delay, href}: { title: string, subtitle: string, delay: number, href: string }) => {
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-5 text-deep-blue`

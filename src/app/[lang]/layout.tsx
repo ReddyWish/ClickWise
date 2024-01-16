@@ -3,7 +3,7 @@ import { Roboto, Bebas_Neue, Playfair } from 'next/font/google'
 import './globals.css'
 import {cn} from "@/utils/helper";
 import {Locale, i18n} from '../../../i18n.config'
-import {Nav} from '@/app/[lang]/components/Nav'
+import {Nav} from '@/app/components/Nav'
 
 
 
@@ -32,7 +32,6 @@ export default async function RootLayout({
     lang: Locale
   }
 }) {
-  // const { page } = await getDictionary(params.lang)
   return (
     <html lang={params.lang}>
       <body className={cn(roboto.className, bebas.variable, 'bg-zinc-900 text-zinc-50')}>

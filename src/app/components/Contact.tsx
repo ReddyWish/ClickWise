@@ -1,9 +1,9 @@
-import {LineGradient} from '@/app/[lang]/components/LineGradient';
+import {LineGradient} from '@/app/components/LineGradient';
 import {useForm} from 'react-hook-form';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import React, {useState} from "react";
-import {Root} from "../../../../dictionaries/types";
+import {Root} from "../../../dictionaries/types";
 
 export function Contact({ page }: Root) {
   const {

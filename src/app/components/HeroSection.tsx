@@ -1,13 +1,11 @@
-import {CustomLink} from "@/app/[lang]/components/CustomLink";
+import {CustomLink} from "@/app/components/CustomLink";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-import {SocialMediaIcons} from "@/app/[lang]/components/SocialMediaIcons";
-import {Locale} from "../../../../i18n.config";
-import {getDictionary} from "../../../../lib/dictionary";
-import {Page, Root} from '../../../../dictionaries/types'
+import {SocialMediaIcons} from "@/app/components/SocialMediaIcons";
+import {Page, Root} from '../../../dictionaries/types'
+
 
 export function HeroSection({ page }: Root) {
-
   let section = page.home.hero
   return (
     <section id='home'
@@ -68,16 +66,15 @@ export function HeroSection({ page }: Root) {
                hidden: {opacity: 0},
                visible: {opacity: 1}
              }}
-          className='object-cover object-top z-10 w-full relative'>
-          <Image src='/avatar.svg' alt='profile' width={900} height={900}
-                 />
+                    className='object-top z-10 relative w-full h-full max-sm:top-0 max-md:top-0'
+          >
+          <Image src='/avatar.svg' alt='profile' width={900} height={900}/>
         </motion.div>
 
-        <div className='absolute z-10 w-full h-full'>
-          <div
-            className='absolute bottom-0 left-0 right-0 top-1/2 bg-gradient-to-t from-zinc-900 to-transparent opacity-75'></div>
+        <div className='absolute z-10 w-full h-full max-sm:top-0'>
+          <div className='absolute left-0 right-0 top-1/2 bg-gradient-to-t from-zinc-900 to-transparent opacity-75 '></div>
         </div>
-        <Image src='/blob (2).svg' alt='background' width={700} height={700} className='absolute z-0 md:bottom-1'/>
+        <Image src='/blob.svg' alt='background' width={700} height={700} className='absolute z-0 md:bottom-1'/>
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
-import {LineGradient} from "@/app/[lang]/components/LineGradient";
-import {Root} from "../../../../dictionaries/types";
+import {LineGradient} from "@/app/components/LineGradient";
+import {Root} from "../../../dictionaries/types";
 
 
 export function Testimonials({ page }: Root) {
