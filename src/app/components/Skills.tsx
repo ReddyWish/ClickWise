@@ -27,35 +27,39 @@ export function Skills({ page }: Root) {
             <ul>
               <li className='pb-5'>
                 💡 {section.seo}
-                <p className='pl-6 text-zinc-300 text-xs'>€1,100 – €4,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€1.100 – €4.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["content marketing"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€1,500 – €10,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€1.500 – €10.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section[ "social media marketing"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€900 – €20,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€900 – €20.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["pay-per-click"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€4,100 – €7,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€4.100 – €7.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["influencer marketing"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€1,000 – €3,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€1.000 – €3.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["online advertising"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€2,100 – €4,500 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€2.100 – €4.500 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["reputation management"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€500 – €4,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€500 – €4.000 / {section.month}</p>
               </li>
               <li className='pb-2'>
                 💡 {section["email marketing"]}
-                <p className='pl-6 text-zinc-300 text-xs'>€300 – €5,000 / {section.month}</p>
+                <p className='pl-6 text-zinc-300 text-xs'>€300 – €5.000 / {section.month}</p>
+              </li>
+              <li className='pb-2'>
+                💡 {section.consulting}
+                <p className='pl-6 text-zinc-300 text-xs'>€100 / {section.hour}</p>
               </li>
             </ul>
           </div>

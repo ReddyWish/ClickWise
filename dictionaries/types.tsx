@@ -68,7 +68,9 @@ export interface Skills2 {
   "online advertising": string
   "reputation management": string
   "email marketing": string
+  consulting: string
   month: string
+  hour: string
   "experience-title": string
   "experience-description": string
   "innovative-title": string
