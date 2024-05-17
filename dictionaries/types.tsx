@@ -5,6 +5,7 @@ export interface Root {
 export interface Page {
   home: Home
   about: About
+  policy: Policy
 }
 
 export interface Home {
@@ -108,4 +109,10 @@ export interface Contacts {
 export interface About {
   title: string
   description: string
+}
+
+export interface Policy {
+  privacy: string,
+  conditions: string,
+  cookies: string,
 }

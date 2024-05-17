@@ -78,6 +78,11 @@
     "about": {
       "title": "About Us",
       "description": "This is the about page"
+    },
+    "policy": {
+      "privacy": "Privacy Policy",
+      "conditions": "Use conditions",
+      "cookies": "Cookies"
     }
   }
 }

@@ -18,7 +18,7 @@ export async function ServerHome({ lang }: { lang: Locale }) {
       <Projects page={page}/>
       <Testimonials page={page}/>
       <Contact page={page}/>
-      <Footer/>
+      <Footer page={page}/>
     </div>
   )
 }
