@@ -263,8 +263,8 @@ export function PrivacyModal({ onClose }: PrivacyModalProps) {
             </h2>
             <p className="mb-4">
               Irina Shuvatova es titular de todos los derechos de autor,
-              propiedad intelectual, industrial, "know how" y cuantos otros
-              derechos guardan relación con los contenidos del sitio web{" "}
+              propiedad intelectual, industrial, &quot;know how&quot; y cuantos
+              otros derechos guardan relación con los contenidos del sitio web{" "}
               <a
                 href="https://www.click-wiser.com"
                 className="text-blue-500 hover:underline"
