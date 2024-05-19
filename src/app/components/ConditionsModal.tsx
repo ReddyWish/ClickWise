@@ -62,7 +62,7 @@ export function ConditionsModal({ onClose }: CookiesModalProps) {
             <p className="mb-4">
               <strong>Responsable:</strong> Irina Shuvatova
               <br />
-              <strong>Correo electrónico:</strong> ii.shuvatova@yahoo.com
+              <strong>Correo electrónico:</strong> i.shuvatova@yahoo.com
               <br />
               <strong>Teléfono:</strong> +34 664136580
             </p>
