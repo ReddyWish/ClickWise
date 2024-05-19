@@ -42,12 +42,12 @@ export function PrivacyModal({ onClose }: PrivacyModalProps) {
             </button>
           </div>
 
-          <div className="privacy-policy p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh]">
+          <div className="privacy-policy p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh] text-gray-900 dark:text-gray-100">
             <p className="mb-4">
               <strong>Responsable del tratamiento de datos:</strong> Irina
               Shuvatova
               <br />
-              <strong>Correo electrónico:</strong> irina.shuvatova@gmail.com
+              <strong>Correo electrónico:</strong> i.shuvatova@yahoo.com
               <br />
               <strong>Teléfono:</strong> +34 664136580
             </p>

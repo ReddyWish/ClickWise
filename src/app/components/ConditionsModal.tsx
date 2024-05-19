@@ -42,7 +42,7 @@ export function ConditionsModal({ onClose }: CookiesModalProps) {
             </button>
           </div>
 
-          <div className="terms-conditions p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh]">
+          <div className="terms-conditions p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh] text-gray-900 dark:text-gray-100">
             <h2 className="text-xl font-semibold mb-2">Información general</h2>
             <p className="mb-4">
               Conforme al Art. 10 de la Ley 34/2002, de 11 de julio, de
@@ -62,7 +62,7 @@ export function ConditionsModal({ onClose }: CookiesModalProps) {
             <p className="mb-4">
               <strong>Responsable:</strong> Irina Shuvatova
               <br />
-              <strong>Correo electrónico:</strong> irina.shuvatova@gmail.com
+              <strong>Correo electrónico:</strong> ii.shuvatova@yahoo.com
               <br />
               <strong>Teléfono:</strong> +34 664136580
             </p>

@@ -44,7 +44,7 @@ export function CookiesModal({ onClose }: CookiesModalProps) {
             </button>
           </div>
 
-          <div className="cookie-policy p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh] no-scrollbar">
+          <div className="cookie-policy p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-auto h-[70vh] no-scrollbar text-gray-900 dark:text-gray-100">
             <p className="mb-4">
               <span className="intro font-medium">
                 Irina Shuvatova informa acerca del uso de las cookies en su
