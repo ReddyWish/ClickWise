@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/utils/helper";
 import { Locale, i18n } from "../../../i18n.config";
 import { Nav } from "@/app/components/Nav";
+import Script from "next/script";
 
 const roboto = Roboto({
   weight: ["300", "400", "700"],
@@ -44,6 +45,11 @@ export default async function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
+      <Script
+        id="cookieyes"
+        type="text/javascript"
+        src="https://cdn-cookieyes.com/client_data/e4d5b58a24aff5ebad998e34/script.js"
+      ></Script>
       <body
         className={cn(
           roboto.className,
