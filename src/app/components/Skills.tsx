@@ -33,7 +33,7 @@ export function Skills({ page }: Root) {
               <li className="pb-5">
                 💡 {section.general_marketing}
                 <p className="pl-6 text-zinc-300 text-xs">
-                  €100 / {section.hour}
+                  €121 / {section.hour}
                 </p>
               </li>
               <li className="pb-2">
@@ -45,7 +45,7 @@ export function Skills({ page }: Root) {
               <li className="pb-2">
                 💡 {section.content_creation}
                 <p className="pl-6 text-zinc-300 text-xs">
-                  €100 / {section.hour}
+                  €121 / {section.hour}
                 </p>
                 <p className="pl-6 text-zinc-300 text-xs">
                   €1,500 - €10,000 / {section.month}
@@ -54,13 +54,13 @@ export function Skills({ page }: Root) {
               <li className="pb-2">
                 💡 {section.content_editing}
                 <p className="pl-6 text-zinc-300 text-xs">
-                  €100 / {section.hour}
+                  €121 / {section.hour}
                 </p>
               </li>
               <li className="pb-2">
                 💡 {section.social_media_marketing}
                 <p className="pl-6 text-zinc-300 text-xs">
-                  €100 / {section.hour}
+                  €121 / {section.hour}
                 </p>
                 <p className="pl-6 text-zinc-300 text-xs">
                   €900 - €2,000 / {section.month}
@@ -69,7 +69,7 @@ export function Skills({ page }: Root) {
               <li className="pb-2">
                 💡 {section.influencer_marketing}
                 <p className="pl-6 text-zinc-300 text-xs">
-                  €100 / {section.hour}
+                  €121 / {section.hour}
                 </p>
                 <p className="pl-6 text-zinc-300 text-xs">
                   €1,000 - €3,000 / {section.month}
