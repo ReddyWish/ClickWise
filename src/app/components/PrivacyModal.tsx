@@ -92,7 +92,7 @@ export function PrivacyModal({ onClose }: PrivacyModalProps) {
               acceso, oposición, rectificación y cancelación reconocidos en el
               citado Reglamento (UE). El ejercicio de estos derechos puede
               realizarlo el propio usuario a través de email a:
-              irina.shuvatova@lextram.com
+              i.shuvatova@yahoo.com
             </p>
             <ul className="list-disc list-inside mb-4">
               <li>Nombre, apellidos y fotocopia del DNI, NIE o pasaporte.</li>
